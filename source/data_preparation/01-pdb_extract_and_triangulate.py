@@ -33,7 +33,7 @@ if len(sys.argv) <= 1:
 in_fields = sys.argv[1].split("_")
 chain_ids1 = in_fields[1]
 
-pdb_filename = masif_opts['raw_pdb_dir']+sys.argv[1]+".pdb"
+pdb_filename = masif_opts['raw_pdb_dir']+"/"+sys.argv[1]+".pdb"
 tmp_dir= masif_opts['tmp_dir']
 
 protonated_file = tmp_dir+"/"+sys.argv[1]+".pdb"
