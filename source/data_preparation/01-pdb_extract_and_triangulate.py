@@ -31,7 +31,7 @@ if len(sys.argv) <= 1:
 
 # Save the chains as separate files. 
 in_fields = sys.argv[1].split("_")
-chain_ids1 = in_fields[1]
+chain_ids1 = in_fields[2]
 
 pdb_filename = masif_opts['raw_pdb_dir']+"/"+sys.argv[1]+".pdb"
 tmp_dir= masif_opts['tmp_dir']
