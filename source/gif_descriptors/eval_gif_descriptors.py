@@ -32,8 +32,8 @@ def compute_dfss_histogram(rho, ddc, mask):
             continue
         if kij[j] < -0.7 or kij[j] > 0.7:
             continue
-        radial_bin = np.int((D[j] - 1) // 2)
-        curv_bin = np.int(np.floor(10 * (kij[j] + 0.7)))
+        radial_bin = int((D[j] - 1) // 2)
+        curv_bin = int(np.floor(10 * (kij[j] + 0.7)))
         histogram[radial_bin][curv_bin] += 1
     # Reshape the histogram to 1 dimension:
     histogram = np.reshape(histogram, -1)
